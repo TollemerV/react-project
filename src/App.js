@@ -1,17 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Card } from './components/atoms/Card/Card';
 import { ThemeProvider } from 'styled-components';
 import {getTheme} from './themes/default.js'
-function App() {
+import Reservation from './components/templates/Reservation/Reservation';
+export default function App() {
   return (
+    <>
     <ThemeProvider theme={getTheme()}>
     <div className="App">
       Ganeshka toolkit
     </div>
     </ThemeProvider>
+    <Reservation />
+    </>
   );
-}
-
-export default App;
+};
