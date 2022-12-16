@@ -1,20 +1,19 @@
-import md5 from "md5";
 
-const BASE_URL = "http://localhost:8055/";
 
-const fetchData = async (content, id, body) => {
+const BASE_URL = "http://localhost:8055/items";
+
+const fetchData = async (content, numTable, value, heureReserv) => {
     
-  let collectionURL = `${BASE_URL}/${content}`;
-  let contentId = "";
-  contentId = typeof id !== 'undefined'  ? "/" + id : "";
-  let bodyContent = "";
-  bodyContent = typeof id !== 'undefined'  ? bodyContent : "";
-  let url = `${collectionURL}${contentId}?access_token=jn48XEIrtPrCBRoXtY-ToNY9KOnxpwyH`;
-
+  let url = `${BASE_URL}/${content}`;
+  console.log(numTable +" | "+ value +" | "+heureReserv);
   try {
     let response = await fetch(url, {
-    method: 'PATCH',
-    body: bodyContent,
+    method: 'POST',
+    body: JSON.stringify({
+            numTable: numTable,
+            date : value,
+            heure : heureReserv
+        }),
     headers: {
           'Content-type': 'application/json; charset=UTF-8',
     },

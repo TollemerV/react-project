@@ -12,7 +12,19 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+body {
+  background-image: url('./img/bg.png');
+}
+.MuiBox-root{
+  background-color: aliceblue;
+  padding: 15px 15px;
+  border-radius: 7px;
+}
+.MuiButton-root {
+  width : 150px;
+  padding: 10px 10px !important;
+  background-color: aliceblue !important;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
