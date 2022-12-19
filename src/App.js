@@ -2,6 +2,7 @@ import React from 'react';
 import home from './assets/home.png';
 import clock from './assets/clock.png';
 import kitchen from './assets/kitchen.png';
+import add from './assets/add.png';
 import './App.css';
 import { useState } from 'react';
 
@@ -13,7 +14,7 @@ function App() {
     <div className="App">
       <div>
         <h1>
-          {(["Accueil","Réservation","Cuisine"])[active]}
+          {(["Accueil","Réservation","Cuisine","Nouvelle réservation"])[active]}
         </h1>
       </div>
       <nav className="navbar">
@@ -25,6 +26,9 @@ function App() {
         </div>
         <div className={active === 2 ? "active":"setActive"} onClick={()=>setActive(2)}>
           <img src={kitchen} alt="Cuisine"/>
+        </div>
+        <div id="test" className={active === 3 ? "":"setActive"} onClick={()=>setActive(3)}>
+          <img id="add" src={add} alt="Nouvelle réservation"/>
         </div>
       </nav>
     </div>

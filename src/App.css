@@ -39,10 +39,20 @@ h1{
 
 }
 
+#add{
+  width: 150%;
+  margin-top: -150%;
+
+}
+
 @media (min-height: 680px){
   .navbar{
     left: 50%;
     transform: translateX(-50%) ;
     max-width: 30rem; 
+  }
+  #add{
+    width: 175%;
+    margin-top: -150%;
   }
 }
