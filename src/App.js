@@ -5,7 +5,7 @@ import {getTheme} from './themes/default.js';
 import NoPage from './components/templates/NoPage/NoPage';
 import Reservation from './components/templates/Reservation/Reservation';
 import ReservationView from './components/templates/ReservationView/ReservationView';
-
+import Home from './components/templates/Home/Home';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -13,8 +13,9 @@ export default function App() {
           <>
             <Router>
               <Routes>
-                <Route path={"/reservation"} element={<Reservation/>}/>
-                <Route path={"/reservationView"} element={<ReservationView/>}/>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/reservation" element={<Reservation/>}/>
+                <Route path="/reservation-view" element={<ReservationView/>}/>
                 <Route path="*" element={<NoPage />} />
               </Routes>
             </Router>
