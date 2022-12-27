@@ -11,7 +11,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./reservation.css";
 import { fetchData } from '../../../services/fetchData';
-
+import NavBar from '../../molecules/NavBar/NavBar';
 
 
 function Reservation (){
@@ -41,7 +41,7 @@ function Reservation (){
     const handleHeure = (event) => {
         setHeureReserv(event.target.value);
     };
-    return <Stack spacing={20} direction="column" alignItems="center" justifyContent="space-around">
+    return <><Stack spacing={20} direction="column" alignItems="center" justifyContent="space-around">
                 <h1>Reservation :</h1>
                 <Stack spacing={20} direction="row" justifyContent="space-evenly"
   alignItems="center">
@@ -93,7 +93,8 @@ function Reservation (){
                 </Stack>    
                 
                 <Button variant="outlined" onClick={()=>send()}>Enregistrer</Button>
-            </Stack>;
+            </Stack>
+            <NavBar></NavBar></>;
 }
 
 export default Reservation;

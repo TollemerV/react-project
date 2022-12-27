@@ -2,7 +2,7 @@
 import * as React from 'react';
 import "./reservationView.css";
 import { getData } from '../../../services/getData';
-
+import NavBar from '../../molecules/NavBar/NavBar';
 
 
 function ReservationView (){
@@ -19,7 +19,7 @@ function ReservationView (){
   React.useEffect(() => {
     getD();
   },[]);
-    return <div className="wrapper" ><table>
+    return <><div className="wrapper" ><table>
             <tbody>
                 <tr>
                     <th>Id</th>
@@ -30,7 +30,8 @@ function ReservationView (){
                 {reservations.map((e)=><tr key={e.id+"-tr"} ><td key={e.id+"-1"}>{e.id}</td><td key={e.id+"-2"}>{e.numTable}</td><td key={e.id+"-3"}>{e.heure}</td><td key={e.id+"-4"}>{e.date}</td></tr>)}
             </tbody>
             </table>
-            </div>;
+            </div>
+            <NavBar></NavBar></>;
 }
 
 export default ReservationView;
