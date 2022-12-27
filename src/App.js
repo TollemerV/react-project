@@ -1,17 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Card } from './components/atoms/Card/Card';
 import { ThemeProvider } from 'styled-components';
-import {getTheme} from './themes/default.js'
-function App() {
-  return (
-    <ThemeProvider theme={getTheme()}>
-    <div className="App">
-      Ganeshka toolkit
-    </div>
-    </ThemeProvider>
-  );
-}
+import {getTheme} from './themes/default.js';
+import NoPage from './components/templates/NoPage/NoPage';
+import Reservation from './components/templates/Reservation/Reservation';
+import ReservationView from './components/templates/ReservationView/ReservationView';
 
-export default App;
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+export default function App() {
+  return (
+          <>
+            <Router>
+              <Routes>
+                <Route path={"/reservation"} element={<Reservation/>}/>
+                <Route path={"/reservationView"} element={<ReservationView/>}/>
+                <Route path="*" element={<NoPage />} />
+              </Routes>
+            </Router>
+          </>    
+    
+  );
+};
