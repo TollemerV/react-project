@@ -21,10 +21,9 @@ body {
   border-radius: 7px;
 }
 h1 {
-  width: 200px;
-  border-radius: 7px;
-  padding: 10px 10px !important;
-  background-color: white !important;
+  color: white;
+  border-bottom: white solid 1px;
+  padding-bottom: 15px;
 }
 .MuiButton-root {
   width : 150px;
