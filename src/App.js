@@ -14,7 +14,7 @@ export default function App() {
             <Router>
               <Routes>
                 <Route path={"/reservation"} element={<Reservation/>}/>
-                <Route path={"/reservationView"} element={<ReservationView/>}/>
+                <Route path={"/reservation-view"} element={<ReservationView/>}/>
                 <Route path="*" element={<NoPage />} />
               </Routes>
             </Router>

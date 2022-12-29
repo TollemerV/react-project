@@ -12,12 +12,14 @@ function NavBar() {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="navbar-container">
+    
+/*     <div className="navbar-container">
       <div>
         <h1>
           {(["Accueil","Réservation","Cuisine","Nouvelle réservation"])[active]}
         </h1>
-      </div>
+      </div> */
+
       <nav className="navbar">
         
         <div className={active === 0 ? "active":"setActive"} onClick={()=>setActive(0)}>
@@ -33,7 +35,7 @@ function NavBar() {
           <Link to="/reservation" ><img id="add" src={add} alt="Nouvelle réservation"/></Link>
         </div>
       </nav>
-    </div>
+/*     </div> */
   );
 }
 

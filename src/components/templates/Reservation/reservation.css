@@ -11,3 +11,9 @@
 #heure-reservation, #numTable-select{
     box-shadow: grey 1px 5px 5px;
 }
+
+@media screen and (max-width: 680px) {
+    #container-formcontrol{
+        width: 80%;
+    }
+  }
