@@ -6,7 +6,7 @@ import CardCui from "../../atoms/CardCui/CardCui";
 
 export default function Cuisine () {
   
-    return (<><div id="container"><CardCui id1="wrapper1-inventaire" 
+    return (<><div id="container-cuisine"><span id="cuisine-title">Cuisine</span><div id="container"><CardCui id1="wrapper1-inventaire" 
                      id2="wrapper2-inventaire"
                      img={clock} 
                      imgId="img1-inventaire" 
@@ -42,6 +42,8 @@ export default function Cuisine () {
                      to="/menu">
 
               </CardCui>
+            </div>
+            
             </div>
             <NavBar></NavBar>
             </>);
