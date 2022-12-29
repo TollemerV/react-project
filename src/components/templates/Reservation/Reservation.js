@@ -16,6 +16,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import dayjs from 'dayjs';
 import TextField from '@mui/material/TextField';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
+import 'dayjs/locale/fr';
 
 
 function Reservation (){
@@ -23,6 +24,7 @@ function Reservation (){
     const [dateValue, setDayJsValue] = React.useState(dayjs(new Date()));
     const [nameValue, setNameValue] = React.useState("");
     const [nbPersonValue, setNbPerson] = React.useState(1);
+    const [locale] = React.useState('fr');
 
     const send = async function (){
         let result = await fetchData("reservation", nbPersonValue, dateValue, nameValue);
@@ -75,7 +77,7 @@ function Reservation (){
             </Box>   
             <Box>   
                 <FormControl>
-                    <LocalizationProvider dateAdapter={AdapterDayjs}>
+                    <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale={locale}>
                         <Stack spacing={3}>
 
                             <DateTimePicker
