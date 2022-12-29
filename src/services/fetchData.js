@@ -1,6 +1,6 @@
 
 
-const BASE_URL = "http://localhost:8055/items";
+const BASE_URL = "https://twc350af.directus.app/items";
 
 const fetchData = async (content, numTable, dateValue, nameValue) => {
     

@@ -34,14 +34,16 @@ function Reservation (){
     } */
 
     const send = async function (){
-        let result = await fetchData("reservation", numTable, dateValue, nameValue);
+        
         let msg;
-        if (dateValue < (new Date()==-1)){
+        if (dateValue < (new Date())){
             msg = "Erreur : la date et l'heure doit etre suppérieur à la date et l'heure de maintenant";
         }else {
+            let result = await fetchData("reservation", numTable, dateValue, nameValue);
+            console.log(result);
             msg = "L'envoi est réussit !";
         }
-        console.log(nameValue);
+        
         alert(msg);
     }
     const handleDate = (newValue) => {

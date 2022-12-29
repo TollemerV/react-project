@@ -11,14 +11,15 @@ function ReservationView (){
   
   
 
-  const getD = async () => {
+  
+  React.useEffect(() => {
+    const getD = async () => {
     const response = await getData("reservation");
 
-    setReservations([...reservations, ...response.data]);
+    setReservations([...response.data]);
   };
-  React.useEffect(() => {
     getD();
-  },[]);
+  },[reservations]);
     return <><div className="wrapper" ><table>
             <tbody>
                 <tr>

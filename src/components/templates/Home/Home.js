@@ -11,18 +11,20 @@ export default function Home () {
   
   
 
-  const getD = async () => {
+  
+  React.useEffect(() => {
+    const getD = async () => {
     const response = await getData("reservation");
 
-    setLength(length + response.data.length);
+    setLength(response.data.length);
   };
-  React.useEffect(() => {
-    getD();
-  },[]);
-    return (<><div className="wrapper">
-                <img src={clock} alt="Réservation"/>
+  getD();
+  },[length]);
+    return (<><div id="global" className="wrapper"><div id="space" className="wrapper">
+                <img src={clock} alt="Réservation" id="clockRes"/>
                 <span className="text"> Tables réservées Aujourd'hui <br></br> {length}</span>
                 
+            </div>
             </div>
             <NavBar></NavBar></>);
 }
