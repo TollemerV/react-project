@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
-import "./cardcui.css";
-function CardCui (props) {
-return <div className="wrapper1">
+import "./cardcuisine.css";
+function CardCuisine (props) {
+return (<div className="wrapper-cc-1"> 
             <Link to={props.to} >
-                <div className="wrapper2">
+                <div className="container-cc-1">
                     <img className="image" src={props.img} alt={props.imgAlt} id={props.imgId}/>
                     <span className="text">{props.text}</span>
                     
                 </div>
             </Link>
-        </div>;
+        </div>
+        );
 }
-export default CardCui;
+export default CardCuisine;

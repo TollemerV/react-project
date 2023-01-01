@@ -22,7 +22,7 @@ export default function Home () {
   },[length]);
     return (<><div id="global" className="wrapper"><div id="space" className="wrapper">
                 <img src={clock} alt="Réservation" id="clockRes"/>
-                <span className="text"> Tables réservées Aujourd'hui <br></br> {length}</span>
+                <span className="text-home"> Tables réservées Aujourd'hui <br></br> {length}</span>
                 
             </div>
             </div>
