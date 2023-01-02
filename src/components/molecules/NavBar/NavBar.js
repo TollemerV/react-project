@@ -1,7 +1,7 @@
 import React from 'react';
-import home from '../../../assets/home.png';
-import clock from '../../../assets/clock.png';
-import kitchen from '../../../assets/kitchen.png';
+import home from '../../../assets/home_violet.png';
+import clock from '../../../assets/clock_violet.png';
+import kitchen from '../../../assets/toque_violet.png';
 import add from '../../../assets/add.png';
 import './navBar.css';
 import { useState } from 'react';
