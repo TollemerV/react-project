@@ -25,15 +25,16 @@ function Reservation (){
     const [nbPersonValue, setNbPerson] = React.useState(1);
 
     const send = async function (){
-        let result = await fetchData("reservation", nbPersonValue, dateValue, nameValue);
+        
         let msg;
-        if(dateValue < (new Date()==-1)){
+        if (dateValue < (new Date())){
             msg = "Erreur : la date et l'heure doit etre suppérieur à la date et l'heure de maintenant";
         }else {
-            msg = "L'envoi est réussit !";
+            let result = await fetchData("reservation", numTable, dateValue, nameValue);
+            msg = "L'envoi est réussit !";      
         }
-        alert(msg);
-    }
+          alert(msg);
+     }
 
     const handleDate = (newValue) => {
         setDayJsValue(newValue);

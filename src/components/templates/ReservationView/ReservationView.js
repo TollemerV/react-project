@@ -7,16 +7,18 @@ import moment from 'moment';
 
 
 function ReservationView (){
+
   moment.locale('fr');  
   const [reservations, setReservations] = React.useState([]);
-  const getD = async () => {
-  const response = await getData("reservation");
 
-    setReservations([...reservations, ...response.data]);
+ React.useEffect(() => {
+      const getD = async () => {
+        const response = await getData("reservation");
+
+        setReservations([...response.data]);
   };
-  React.useEffect(() => {
     getD();
-  },[]);
+  },[reservations]);
 
     return <>
 
@@ -39,7 +41,7 @@ function ReservationView (){
         </tbody>
       </table>
     </div>
-            <NavBar></NavBar></>;
+    <NavBar></NavBar></>;
 }
 
 export default ReservationView;
