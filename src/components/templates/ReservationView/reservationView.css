@@ -31,13 +31,6 @@ td{
     padding: 1vw;
 }
 
-#container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .espace
 {
  height : 10px;

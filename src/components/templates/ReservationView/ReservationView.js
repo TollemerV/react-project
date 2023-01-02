@@ -22,7 +22,7 @@ function ReservationView (){
 
     return <>
 
-    <div id='container' className="wrapper">
+    <div className="wrapper container">
       <h1>Réservation du jour</h1>
       <table>
         <tbody>
