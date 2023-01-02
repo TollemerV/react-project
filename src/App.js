@@ -6,6 +6,8 @@ import ReservationView from './components/templates/ReservationView/ReservationV
 import Home from './components/templates/Home/Home';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cuisine from './components/templates/Cuisine/Cuisine';
+import Stock from './components/templates/Stock/Stock';
+import Inventory from './components/templates/Inventory/Inventory';
 export default function App() {
   return (
           <>
@@ -16,7 +18,8 @@ export default function App() {
                 <Route path="/reservation" element={<Reservation/>}/>
                 <Route path="/reservation-view" element={<ReservationView/>}/>
                 <Route path="/cuisine" element={<Cuisine/>}/>
-
+                <Route path="/inventaire" element={<Stock/>}/>
+                <Route path="/gestion-de-stock" element={<Inventory/>}/>
                 <Route path="*" element={<NoPage />} />
               </Routes>
             </Router>
