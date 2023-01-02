@@ -11,10 +11,12 @@ export default function App() {
           <>
             <Router>
               <Routes>
+
                 <Route path="/" element={<Home/>}/>
                 <Route path="/reservation" element={<Reservation/>}/>
                 <Route path="/reservation-view" element={<ReservationView/>}/>
                 <Route path="/cuisine" element={<Cuisine/>}/>
+
                 <Route path="*" element={<NoPage />} />
               </Routes>
             </Router>

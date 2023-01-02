@@ -4,12 +4,6 @@
     height: 100vh;
 } */
 
-h1 {
-    color: #fff;
-    margin: 0;
-    padding: 2vw;
-}
-
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -48,9 +42,8 @@ h1 {
 
 @media (min-height: 680px) {
     .navbar {
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 30rem;
+
+        max-width: 100%;
     }
 
     #add {

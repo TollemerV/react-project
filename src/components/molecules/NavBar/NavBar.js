@@ -12,7 +12,6 @@ function NavBar() {
   const [active, setActive] = useState(0);
 
   return (
-    
           <nav className="navbar">
             
             <div className={active === 0 ? "active":"setActive"} onClick={()=>setActive(0)}>
