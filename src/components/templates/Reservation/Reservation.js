@@ -30,7 +30,7 @@ function Reservation (){
         if (dateValue < (new Date())){
             msg = "Erreur : la date et l'heure doit etre suppérieur à la date et l'heure de maintenant";
         }else {
-            let result = await fetchData("reservation", numTable, dateValue, nameValue);
+            await fetchData("reservation", nbPersonValue, dateValue, nameValue);
             msg = "L'envoi est réussit !";      
         }
           alert(msg);
