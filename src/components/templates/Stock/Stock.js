@@ -1,17 +1,17 @@
 
 import * as React from 'react';
-import "./inventaireView.css";
+import "./stock.css";
 import { getData } from '../../../services/getData';
 import NavBar from '../../molecules/NavBar/NavBar';
 
 
 
-function InventaireView (){ 
+function Stock (){ 
   const [stock, setStock] = React.useState([]);
 
  React.useEffect(() => {
       const getD = async () => {
-        const response = await getData("product");
+        const response = await getData("Product");
 
         setStock([...response.data]);
   };
@@ -35,11 +35,11 @@ function InventaireView (){
 
             {stock.map((e)=>
             
-            <tr key={e.id+"-tr"} ><td align='center' key={e.id+"-1"}>{e.name}</td><td align='center' key={e.id+"-3"}>{e.quantity}</td><td align='center' key={e.id+"-2"}>{e.quantityN}</td></tr>)}
+            <tr key={e.id+"-tr"} ><td align='center' key={e.id+"-1"}>{e.name}</td><td align='center' key={e.id+"-3"}>{e.quantity}</td><td align='center' key={e.id+"-2"}>{e.requiredQty}</td></tr>)}
         </tbody>
       </table>
     </div>
     <NavBar></NavBar></>;
 }
 
-export default InventaireView;
+export default Stock;
