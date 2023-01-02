@@ -1,30 +1,43 @@
 .text-home{
-    font-size: 270%;
+    font-size: 28px;
     color: rgb(112, 42, 112);
-    margin-left : 15%;
 }
-#global{
-    width: 100%;
-    height: calc(100vh - 64px);
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+.number{
+    font-size: 50px;
+    color: black;
+    margin-top:25px
 }
-#space{
-    width: 50%;
-    background-color: white;
-    height: 50%;
-    border-radius: 9px;
+
+.card-home{
     display: flex;
     flex-direction: column;
+    padding: 6vw;
+    margin-top: 10vw;
+    width: 55%;
+    background-color: white;
+    height: 250px;
+    border-radius: 9px;
 }
 #clockRes {
+    position: relative;
+    top: -50px;
     margin-left: 10%;
-    width: 10%;
+    width: 30%;
     margin-top: -5%;
-    background-color: rgb(54, 23, 54);
+    background-color: #521767;
     border-radius: 9px;
     padding: 3% 3%;
     color: white;
 }
+
+.thumbs-wrapper, .carousel-status{
+    display: none;
+}
+
+.carousel *{
+    box-sizing: unset !important;
+  }
+
+  li .slide, .selected{
+    height: 45vh;
+  }
