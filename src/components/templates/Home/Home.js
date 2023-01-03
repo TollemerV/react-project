@@ -19,7 +19,7 @@ export default function Home () {
     setLength(response.data.length);
   };
   getD();
-  },[length]);
+  },[]);
     return (<>
     <div className="container"> 
     <h1> Tableau de bord</h1>

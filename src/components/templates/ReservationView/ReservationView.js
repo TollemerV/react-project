@@ -18,7 +18,7 @@ function ReservationView (){
         setReservations([...response.data]);
   };
     getD();
-  },[reservations]);
+  },[]);
 
     return <>
 

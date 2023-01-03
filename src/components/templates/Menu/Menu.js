@@ -58,7 +58,7 @@ function Menu (){
       setDessert([...response_de.data]);    
     };
     getD();
-  },[appetizer,dish,dessert]);
+  },[]);
   const send = async function (){  
     await fetchDataDish(id, nameValue, priceValue, collection);
     alert("L'envoi est réussit !");
