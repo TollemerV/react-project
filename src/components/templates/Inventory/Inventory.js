@@ -30,21 +30,21 @@ function Inventory (){
      }
 
     const handleName = (newValue) => {
-        setNameValue(newValue);
+        setNameValue(newValue.target.value);
     };
 
     const handleQty = (newValue) => {
-        setQtyValue(newValue);
+        setQtyValue(newValue.target.value);
     };
 
     const handleQtyN = (newValue) => {
-        setQtyNValue(newValue);
+        setQtyNValue(newValue.target.value);
     };
     
     return <>
     
 <Stack spacing={10} direction="column" alignItems="center" justifyContent="space-around">
-    <h1>Réserver une table</h1>
+    <h1>Création d'inventaire</h1>
         <div id="container-formcontrol">
 
             <Box sx={{ minWidth: 120 }}>

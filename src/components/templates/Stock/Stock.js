@@ -11,7 +11,7 @@ function Stock (){
 
  React.useEffect(() => {
       const getD = async () => {
-        const response = await getData("Product");
+        const response = await getData("product");
 
         setStock([...response.data]);
   };
