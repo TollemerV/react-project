@@ -41,3 +41,25 @@
   li .slide, .selected{
     height: 45vh;
   }
+
+li{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    padding-inline-start: 40px;
+}
+
+@media (min-width: 680px) { 
+
+    .card-home{
+        padding: 3vw;
+        margin-top: 5vw;
+        height: 400px;
+    }
+    .number{
+       margin-bottom: 10px;
+    }
+
+ }

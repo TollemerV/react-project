@@ -21,4 +21,6 @@ code {
 
 .control-arrow{
   display: none;
+  padding: none !important;
 }
+
