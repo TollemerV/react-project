@@ -49,17 +49,17 @@ function Inventory (){
 
             <Box sx={{ minWidth: 120 }}>
                 <FormControl fullWidth>
-                    <TextField onChange={handleName} id="outlined-basic" label="Nom du produit" variant="outlined" />
+                    <TextField onChange={handleName} id="product-name" label="Nom du produit" variant="outlined" />
                 </FormControl>
             </Box>
             <Box sx={{ minWidth: 120 }}>
                 <FormControl fullWidth>
-                    <TextField onChange={handleQty} id="outlined-basic" label="Quantité" variant="outlined" type="number" />
+                    <TextField onChange={handleQty} id="quantity" label="Quantité" variant="outlined" type="number" />
                 </FormControl>
             </Box>
             <Box sx={{ minWidth: 120 }}>
                 <FormControl fullWidth>
-                    <TextField onChange={handleQtyN} id="outlined-basic" label="Quantité nécessaire" variant="outlined" type="number" />
+                    <TextField onChange={handleQtyN} id="quantity-req" label="Quantité nécessaire" variant="outlined" type="number" />
                 </FormControl>
             </Box>
             
