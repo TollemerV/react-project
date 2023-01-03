@@ -43,7 +43,7 @@ function Cmd (){
         </tbody>
       </table>
     </div>
-    <NavBar></NavBar></>;
+    <NavBar active="2" ></NavBar></>;
 }
 
 export default Cmd;

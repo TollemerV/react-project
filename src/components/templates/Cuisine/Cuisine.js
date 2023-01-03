@@ -54,6 +54,6 @@ export default function Cuisine () {
        </div>
 
 </div>
-<NavBar></NavBar>
+<NavBar active="2" ></NavBar>
             </>);
 }

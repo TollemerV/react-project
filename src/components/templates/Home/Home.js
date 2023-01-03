@@ -44,5 +44,5 @@ export default function Home () {
      
     </div>
 
-    <NavBar></NavBar></>);
+    <NavBar active="0" ></NavBar></>);
 }

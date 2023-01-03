@@ -36,7 +36,18 @@ td{
  height : 10px;
  opacity: 0;
 }
+.MuiButton-root-100 {
+    width: 100%;
+}
 
+.MuiButton-root-47 {
+    width: 48%;
+    margin: 2% 1% !important;
+}
+
+.suppr-img {
+    width: 2vw;
+}
 @media screen and (max-width: 680px) {
     table{
         width: 95%;
