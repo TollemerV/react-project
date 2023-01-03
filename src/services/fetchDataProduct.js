@@ -1,8 +1,8 @@
 
 
-const URL = "https://twc350af.directus.app/items/Product";
+const URL = "https://twc350af.directus.app/items/product";
 
-const fetchDataProduct = async (content, qty, qtyN, nameValue) => {
+const fetchDataProduct = async (qty, qtyN, nameValue) => {
     
   
   console.log(qty +" | "+ qtyN +" | "+ nameValue);
@@ -10,9 +10,9 @@ const fetchDataProduct = async (content, qty, qtyN, nameValue) => {
     let response = await fetch(URL, {
     method: 'POST',
     body: JSON.stringify({
-            requiredQty: qtyN,
+            name : nameValue,
             quantity : qty,
-            name : nameValue
+            requiredQty: qtyN
         }),
     headers: {
           'Content-type': 'application/json; charset=UTF-8',

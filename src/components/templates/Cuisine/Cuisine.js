@@ -3,10 +3,9 @@ import NavBar from "../../molecules/NavBar/NavBar";
 import * as React from 'react';
 import inventory from '../../../assets/inventaire.png';
 import command from '../../../assets/commande.png';
-import history from '../../../assets/history.png';
 import menu from '../../../assets/menu.png';
 import CardCuisine from "../../atoms/CardCuisine/CardCuisine";
-
+import ajoutInventaire from '../../../assets/inventaire_1.png';
 export default function Cuisine () {
   
     return (<>
@@ -35,11 +34,11 @@ export default function Cuisine () {
               </div>
               <div className="row">
                      <CardCuisine 
-                            img={history} 
-                            imgId="img1-histo-cmds" 
-                            imgAlt="historique de commandes" 
-                            text="Historique de commandes" 
-                            to="/histo-cmd">
+                            img={ajoutInventaire} 
+                            imgId="img1-ajout-inventaire" 
+                            imgAlt="Ajouter un inventaire" 
+                            text="Ajouter un inventaire" 
+                            to="/gestion-de-stock">
 
                      </CardCuisine>
                      <CardCuisine 
