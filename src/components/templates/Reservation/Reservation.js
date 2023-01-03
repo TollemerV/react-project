@@ -94,7 +94,7 @@ function Reservation (){
         </div>
         <Button variant="outlined" onClick={()=>send()}>Enregistrer</Button>
 </Stack> 
-<NavBar></NavBar></>;
+<NavBar active="3" ></NavBar></>;
 }
 
 export default Reservation;

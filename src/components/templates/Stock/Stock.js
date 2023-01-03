@@ -26,7 +26,7 @@ const style = {
 
 function Stock (){ 
   const [stock, setStock] = React.useState([]);
- const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
   const [id, setId] = React.useState(0);
   const [nameValue, setNameValue] = React.useState("");
   const [requiredQty, setRequiredQty] = React.useState(0);
@@ -105,7 +105,7 @@ function Stock (){
         </tbody>
       </table>
     </div>
-    <NavBar></NavBar></>;
+    <NavBar active="2" ></NavBar></>;
 }
 
 export default Stock;

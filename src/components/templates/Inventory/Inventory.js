@@ -67,7 +67,7 @@ function Inventory (){
         </div>
         <Button variant="outlined" onClick={()=>send()}>Enregistrer</Button>
 </Stack> 
-<NavBar></NavBar></>;
+<NavBar active="2" ></NavBar></>;
 }
 
 export default Inventory;
