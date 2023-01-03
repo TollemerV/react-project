@@ -9,6 +9,7 @@ import Cuisine from './components/templates/Cuisine/Cuisine';
 import Stock from './components/templates/Stock/Stock';
 import Inventory from './components/templates/Inventory/Inventory';
 import Menu from './components/templates/Menu/Menu';
+import Cmd from './components/templates/Cmd/Cmd';
 export default function App() {
   return (
           <>
@@ -19,6 +20,7 @@ export default function App() {
                 <Route path="/reservation" element={<Reservation/>}/>
                 <Route path="/reservation-view" element={<ReservationView/>}/>
                 <Route path="/cuisine" element={<Cuisine/>}/>
+                <Route path="/cmd" element={<Cmd/>}/>
                 <Route path="/inventaire" element={<Stock/>}/>
                 <Route path="/gestion-de-stock" element={<Inventory/>}/>
                 <Route path="/menu" element={<Menu/>}/>

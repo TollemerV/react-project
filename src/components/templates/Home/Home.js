@@ -25,8 +25,6 @@ export default function Home () {
   };
   getD();
   },[]);
- 
-
 
     return (<>
     <div className="container"> 
