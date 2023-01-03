@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cuisine from './components/templates/Cuisine/Cuisine';
 import Stock from './components/templates/Stock/Stock';
 import Inventory from './components/templates/Inventory/Inventory';
+import Menu from './components/templates/Menu/Menu';
 export default function App() {
   return (
           <>
@@ -20,6 +21,7 @@ export default function App() {
                 <Route path="/cuisine" element={<Cuisine/>}/>
                 <Route path="/inventaire" element={<Stock/>}/>
                 <Route path="/gestion-de-stock" element={<Inventory/>}/>
+                <Route path="/menu" element={<Menu/>}/>
                 <Route path="*" element={<NoPage />} />
               </Routes>
             </Router>
