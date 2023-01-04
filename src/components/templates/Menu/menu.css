@@ -4,9 +4,13 @@ table {
     width: 50%;
 }
 
-th{
+th {
     color: black;
     padding: 10px 10px;
+}
+
+.table-header{
+    font-weight: bold;
 }
 
 tr{
@@ -43,15 +47,19 @@ td{
  height : 10px;
  opacity: 0;
 }
+.marginbuttom {
+    margin-bottom: 10px !important;
+}
+
+.MuiButton-root-100 {
+    width: 100%;
+}
 
 @media screen and (max-width: 680px) {
     table{
         width: 95%;
     }
     td{
-        padding: 2vw;
+        padding: 1vw;
     }
   }
-.modif-img{
-    width: 2vw;
-}

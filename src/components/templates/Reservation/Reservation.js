@@ -76,9 +76,9 @@ function Reservation (){
                 </FormControl>
             </Box>   
             <Box>   
-                <FormControl>
+                <FormControl fullWidth>
                     <LocalizationProvider dateAdapter={AdapterDayjs}>
-                        <Stack spacing={3}>
+                        <Stack spacing={3} >
 
                             <DateTimePicker
                                 label="Date de la réservation"
@@ -94,7 +94,7 @@ function Reservation (){
         </div>
         <Button variant="outlined" onClick={()=>send()}>Enregistrer</Button>
 </Stack> 
-<NavBar></NavBar></>;
+<NavBar active="3" ></NavBar></>;
 }
 
 export default Reservation;

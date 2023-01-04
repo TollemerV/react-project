@@ -43,6 +43,12 @@ td{
  height : 10px;
  opacity: 0;
 }
+.marginbuttom{
+    margin-bottom: 10px !important;
+}
+.MuiButton-root-100 {
+    width: 100%;
+}
 
 @media screen and (max-width: 680px) {
     table{

@@ -16,8 +16,8 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
+  width: 200,
+  bgcolor: 'white',
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
@@ -77,18 +77,18 @@ function Menu (){
         aria-describedby="modif-modal-description"
       >
         <Box sx={style}>
-          <TextField onChange={handleName} id="dish-name" label="Nom" variant="outlined" value={nameValue} />
-          <TextField onChange={handlePrice} id="dish-price" label="prix" variant="outlined" value={priceValue}/>
-          <Button variant="outlined" onClick={()=>send()}>Enregistrer</Button>
+          <TextField className="marginbuttom" onChange={handleName} id="dish-name" label="Nom" variant="outlined" value={nameValue} />
+          <TextField className="marginbuttom" onChange={handlePrice} id="dish-price" label="prix" variant="outlined" value={priceValue}/>
+          <Button className="MuiButton-root-100" variant="outlined" onClick={()=>send()}>Enregistrer</Button>
         </Box>
       </Modal>
       <h1>Menu</h1>
       <table>
         <tbody>
             <tr>
-                <td align='center' className='dish-title'>Entrée</td>
-                <td align='center'>Prix</td>
-                <td align='center'>Modifier</td>
+                <td align='center' className='table-header'>Entrée</td>
+                <td align='center' className='table-header'>Prix</td>
+                <td align='center' className='table-header'>Modifier</td>
             </tr>
             
 
@@ -99,9 +99,9 @@ function Menu (){
               <td></td>
             </tr>
             <tr>
-                <td align='center' className='dish-title'>Plats</td>
-                <td align='center'>Prix</td>
-                <td align='center' >Modifier</td>
+                <td align='center' className='table-header'>Plats</td>
+                <td align='center' className='table-header'>Prix</td>
+                <td align='center' className='table-header' >Modifier</td>
             </tr>
             
 
@@ -112,9 +112,9 @@ function Menu (){
               <td></td>
             </tr>
             <tr>
-                <td align='center' className='dish-title'>Déssert</td>
-                <td align='center'>Prix</td>
-                <td align='center'>Modifier</td>
+                <td align='center' className='table-header'>Déssert</td>
+                <td align='center' className='table-header'>Prix</td>
+                <td align='center' className='table-header'>Modifier</td>
             </tr>
             
 
@@ -124,7 +124,7 @@ function Menu (){
         </tbody>
       </table>
     </div>
-    <NavBar></NavBar></>;
+    <NavBar active="2" ></NavBar></>;
 }
 
 export default Menu;
