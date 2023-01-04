@@ -49,9 +49,7 @@ td{
 .MuiButton-root-100 {
     width: 100%;
 }
-.modif-img {
-    width: 2vw;
-}
+
 @media screen and (max-width: 680px) {
     table{
         width: 95%;

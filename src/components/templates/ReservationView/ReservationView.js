@@ -9,15 +9,16 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { deleteReservation } from '../../../services/deleteReservation';
-import stylo from '../../../assets/stylo.png';
+import poubelle from '../../../assets/poubelle.png';
+
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
+  width: 200,
+  bgcolor: 'white',
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
@@ -79,7 +80,8 @@ function ReservationView (){
 
             {reservations.map((e)=>
             
-            <tr key={e.id+"-tr"} ><td align='center' key={e.id+"-1"}>{e.name}</td><td align='center' key={e.id+"-3"}>{moment(e.date).format('ll')}</td><td align='center' key={e.id+"-2"}>{e.nbPerson}</td><td align='center' key={e.id+"-3"}><button onClick={()=>supprimer(e.id)}><img className="suppr-img" src={stylo} alt="supprimer"/></button></td></tr>)}
+            <tr key={e.id+"-tr"} ><td align='center' key={e.id+"-1"}>{e.name}</td><td align='center' key={e.id+"-3"}>{moment(e.date).format('ll')}</td><td align='center' key={e.id+"-2"}>{e.nbPerson}</td><td align='center' key={e.id+"-3"}><button onClick={()=>supprimer(e.id)}><img className="suppr-img" src={poubelle} alt="supprimer"/></button></td></tr>)}
+
         </tbody>
       </table>
     </div>

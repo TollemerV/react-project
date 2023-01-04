@@ -17,7 +17,7 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 200,
-  bgcolor: 'background.paper',
+  bgcolor: 'white',
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
@@ -86,9 +86,9 @@ function Menu (){
       <table>
         <tbody>
             <tr>
-                <td align='center' className='dish-title'>Entrée</td>
-                <td align='center'>Prix</td>
-                <td align='center'>Modifier</td>
+                <td align='center' className='table-header'>Entrée</td>
+                <td align='center' className='table-header'>Prix</td>
+                <td align='center' className='table-header'>Modifier</td>
             </tr>
             
 
@@ -99,9 +99,9 @@ function Menu (){
               <td></td>
             </tr>
             <tr>
-                <td align='center' className='dish-title'>Plats</td>
-                <td align='center'>Prix</td>
-                <td align='center' >Modifier</td>
+                <td align='center' className='table-header'>Plats</td>
+                <td align='center' className='table-header'>Prix</td>
+                <td align='center' className='table-header' >Modifier</td>
             </tr>
             
 
@@ -112,9 +112,9 @@ function Menu (){
               <td></td>
             </tr>
             <tr>
-                <td align='center' className='dish-title'>Déssert</td>
-                <td align='center'>Prix</td>
-                <td align='center'>Modifier</td>
+                <td align='center' className='table-header'>Déssert</td>
+                <td align='center' className='table-header'>Prix</td>
+                <td align='center' className='table-header'>Modifier</td>
             </tr>
             
 

@@ -4,9 +4,13 @@ table {
     width: 50%;
 }
 
-th{
+th {
     color: black;
     padding: 10px 10px;
+}
+
+.table-header{
+    font-weight: bold;
 }
 
 tr{
@@ -51,15 +55,11 @@ td{
     width: 100%;
 }
 
-.modif-img {
-    width: 2vw;
-}
-
 @media screen and (max-width: 680px) {
     table{
         width: 95%;
     }
     td{
-        padding: 2vw;
+        padding: 1vw;
     }
   }

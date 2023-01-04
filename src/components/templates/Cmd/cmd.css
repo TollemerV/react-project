@@ -28,7 +28,7 @@ td:nth-child(3){
 }
 
 td{
-    padding: 1vw;
+    padding: 0.5rem;
 }
 
 #container{
@@ -49,6 +49,6 @@ td{
         width: 95%;
     }
     td{
-        padding: 2vw;
+        padding: 0.5rem;
     }
   }
