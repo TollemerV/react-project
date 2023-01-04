@@ -25,6 +25,7 @@ function NavBar(props) {
             </div>
             <div id="test" className={active === "3" ? "":"setActive"} >
               <Link to="/reservation" onClick={()=>setActive("3")}><img id="add" src={add} alt="Nouvelle réservation"/></Link>
+
             </div>
           </nav>
       
