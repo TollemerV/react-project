@@ -88,7 +88,7 @@ function Stock (){
                 <th>Nom du produit</th>
                 <th>QTE</th>
                 <th>QTEN</th>
-                <th>Modification</th>
+                <th>Modifier</th>
             </tr>
             <tr className="espace">
               <td></td>
