@@ -45,9 +45,7 @@ td{
     margin: 2% 1% !important;
 }
 
-.suppr-img {
-    width: 2vw;
-}
+
 @media screen and (max-width: 680px) {
     table{
         width: 95%;

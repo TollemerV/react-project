@@ -58,3 +58,11 @@ h1 {
     transform: rotate(360deg);
   }
 }
+.suppr-img, .modif-img {
+  width: 5vw;
+}
+@media screen and (min-width: 680px) {
+  .suppr-img, .modif-img {
+      width: 2vw;
+    }
+}
